@@ -1,2 +1,9 @@
 # Fitness-tracking-application
-A simple fitness tracking application made in Vue.js, Node.js and Express.js
+
+A simple web application used for tracking fitness 
+
+## Front End
+Vue.js together with Quasar framework was used for the front end. 
+
+## Back End 
+Back end is a node.js server with help from Express.js
