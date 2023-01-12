@@ -1,0 +1,20 @@
+# Adam Zjavka
+
+version: '3.8'
+services:
+    app:
+        build: .
+        depends_on:
+            - postgres
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./:/usr/src/app/
+
+    postgres:
+        image: postgres:15.1
+        restart: always
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+            - POSTGRES_DB=postgres
